@@ -5,34 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PeepDB - Quick Database Table Viewer</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>PeepDB</h1>
-        <p>A quick database table viewer</p>
-    </header>
-    <main>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Multi-Database Support</li>
-                <li>Quick Data Inspection</li>
-                <li>User-Friendly CLI</li>
-                <li>Secure Local Storage</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Get Started</h2>
-            <a href="https://docs.peepdb.dev" class="button">Documentation</a>
-            <a href="https://github.com/PeepDB-dev/peepdb" class="button">GitHub</a>
-        </section>
-        <section>
-            <p>GitHub Stars: <span id="star-count">Loading...</span></p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 PeepDB. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#get-started">Get Started</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="hero">
+                <h1 class="glitch" data-text="PeepDB">PeepDB</h1>
+                <p class="subtitle">A quick database table viewer for the modern developer</p>
+                <div class="cta-buttons">
+                    <a href="https://docs.peepdb.dev" class="button primary">Documentation</a>
+                    <a href="https://github.com/PeepDB-dev/peepdb" class="button secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="github-stats">
+                    <span class="stars">
+                        <i class="fas fa-star"></i>
+                        <span id="star-count">Loading...</span> stars
+                    </span>
+                </div>
+            </section>
+            <section id="features">
+                <h2>Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-database"></i>
+                        <h3>Multi-Database Support</h3>
+                        <p>MySQL, PostgreSQL, and MariaDB compatibility</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Quick Data Inspection</h3>
+                        <p>View tables without writing SQL queries</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-terminal"></i>
+                        <h3>User-Friendly CLI</h3>
+                        <p>Intuitive command-line interface</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-lock"></i>
+                        <h3>Secure Local Storage</h3>
+                        <p>Encrypted storage of connection details</p>
+                    </div>
+                </div>
+            </section>
+            <section id="get-started">
+                <h2>Get Started</h2>
+                <div class="code-block">
+                    <pre><code>pip install peepdb</code></pre>
+                </div>
+                <p>Start exploring your databases in seconds!</p>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 PeepDB. All rights reserved.</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
